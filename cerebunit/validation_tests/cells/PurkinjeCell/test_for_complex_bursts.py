@@ -136,7 +136,7 @@ class ComplexBurstingTest(sciunit.Test):
         #    ans = "The model " + model.name + " passed the " + self.__class__.__name__ + ". The coefficient of variation of the model = " + str(a_prediction) + " > 1."
         #else:
         #    ans = "The model " + model.name + " failed the " + self.__class__.__name__ + ". The coefficient of variation of the model = " + str(a_prediction) + " not > 1."
-        #print ans
+        #print(ans)
         return score
 
     def bind_score(self, score, model, observation, prediction):
@@ -145,4 +145,4 @@ class ComplexBurstingTest(sciunit.Test):
             ans = "The model " + model.name + " passed the " + self.__class__.__name__ + ". The coefficient of variation of the model = " + str(prediction) + " > 1."
         else:
             ans = "The model " + model.name + " failed the " + self.__class__.__name__ + ". The coefficient of variation of the model = " + str(prediction) + " not > 1."
-        print ans
+        print(ans)

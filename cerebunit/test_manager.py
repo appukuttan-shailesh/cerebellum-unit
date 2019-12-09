@@ -47,9 +47,9 @@ def get_available_tests(model_scale=None, model_type=None):
     os.chdir(model_path) # change pwd path to model_path
     model_directories = \
             [item for item in os.listdir(os.getcwd()) if os.path.isdir(item)]
-    #print os.path.isdir(model_directories[0]) # will return True
+    #print(os.path.isdir(model_directories[0])) # will return True
     os.chdir(os.path.dirname(model_path)) # reset to original path
-    #print os.path.isdir(model_directories[0]) # will return False
+    #print(os.path.isdir(model_directories[0])) # will return False
     return model_directories #return os.listdir(model_path)
 
 
